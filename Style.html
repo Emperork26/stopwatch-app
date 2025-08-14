@@ -3,17 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Border Styles</title>
+  <title>Coding</title>
 </head>
 <body>
-  <picture>
-  <source 
-  srcset ="https://placehold.co/1024x400?font=oswaldo&text=Border+Styles" media="(min-width: 1024px)"/>
-  <source
-   srcset ="https://placehold.co/600x400?font=Roboto&text=Medium+Image" media="(min-width: 600px)"/>
-  <img
-   src ="https://placehold.co/300x200?font=Arial&text=Small+Image" alt="Responsive Image"/>
-  </picture>
 
+  <form>
+    <label for="country">Select your country:</label>
+    <br/>
+  <select id="country" name="country">
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="uk">UK</option>
+    <option value="australia">Australia</option>
+  </select>
+  <br/>
+  <label for="email">Email:</label>
+  <br/>
+  <input type="email" id="email" name="email" placeholder="Enter your email">
+  <br/>
+  <label for="password">Password:</label>
+  <br/>
+  <input type="password" id="password" name="password" placeholder="Enter your password">
+  <br/>
+  <button type="submit">Submit</button>
+  
+  <label for="Gender">Gender:</label>
+  <br/>
+  
+  <div>
+    Male
+    <input type="radio"  name="gender" id="" value="Male" />
+  </div>
+  
+  <div>
+    Female
+    <input type="radio"  name="gender" id="" value="Female" />
+  </div>
+</form>
 </body>
 </html>
