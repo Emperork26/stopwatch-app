@@ -1,0 +1,80 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light theme (default) */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --btn-bg: #ddd;
+  --btn-hover: #bbb;
+}
+
+/* Dark theme */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f9f9f9;
+  --btn-bg: #333;
+  --btn-hover: #555;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+#display {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--btn-hover);
+}
+
+#laps {
+  list-style: none;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+#laps li {
+  margin: 5px 0;
+  font-size: 1rem;
+  border-bottom: 1px dashed var(--text-color);
+}
